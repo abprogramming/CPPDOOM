@@ -25,11 +25,11 @@
 
 
 #include "doomtype.h"
+#include "doomdef.h"
+
 //
 // MISC
 //
-
-
 
 boolean
 M_WriteFile
@@ -43,11 +43,6 @@ M_ReadFile
   byte**	buffer );
 
 void M_ScreenShot (void);
-
-void M_LoadDefaults (void);
-
-void M_SaveDefaults (void);
-
 
 int
 M_DrawText

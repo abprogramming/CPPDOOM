@@ -58,6 +58,7 @@ static const char rcsid[] = "$Id: d_main.c,v 1.8 1997/02/03 22:45:09 b1 Exp $";
 
 #include "m_argv.h"
 #include "m_misc.h"
+#include "m_defaults.h"
 #include "m_menu.h"
 
 #include "i_system.h"
@@ -584,7 +585,7 @@ void IdentifyVersion (void)
     sprintf(doom2wad, "%s/doom2.wad", doomwaddir);
 
     // Retail.
-    doomuwad = malloc(strlen(doomwaddir)+1+8+1);
+    doomuwad = malloc(strlen(doomwaddir)+1+9+1);
     sprintf(doomuwad, "%s/doomu.wad", doomwaddir);
     
     // Registered.

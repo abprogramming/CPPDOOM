@@ -26,6 +26,14 @@
 #include <stdio.h>
 #include <string.h>
 
+#if defined(__cplusplus)
+    #define CPPDOOM_BEGIN extern "C" {
+    #define CPPDOOM_END }
+#else
+    #define CPPDOOM_BEGIN
+    #define CPPDOOM_END 
+#endif
+
 //
 // Global parameters/defines.
 //
